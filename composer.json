@@ -1,0 +1,19 @@
+{
+  "name": "sc/sc_feuserlist",
+  "description": "SC - Frontend Userlist",
+  "type": "typo3-cms-extension",
+  "require": {
+    "typo3/cms-core": "^9.5.0"
+  },
+  "authors": {
+      "name": "Sebastian Christoph",
+      "email": "admin@sebastian-christoph.de",
+      "homepage": "https://www.sebastian-christoph.de",
+      "role": "Systemadministrator Webanwendungen"
+  },
+  "autoload": {
+    "psr-4": {
+      "SC\\ScFrontenduserlist\\": "Classes/"
+    }
+  }
+}

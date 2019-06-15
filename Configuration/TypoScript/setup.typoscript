@@ -1,15 +1,15 @@
 
-plugin.tx_sc_feuserlist_pluginkey {
+plugin.tx_sc_feuserlist {
     view {
         templateRootPaths.0 = EXT:sc_feuserlist/Resources/Private/Templates/
-        templateRootPaths.1 = {$plugin.tx_sc_feuserlist_pluginkey.view.templateRootPath}
+        templateRootPaths.1 = {$plugin.tx_sc_feuserlist.view.templateRootPath}
         partialRootPaths.0 = EXT:sc_feuserlist/Resources/Private/Partials/
-        partialRootPaths.1 = {$plugin.tx_sc_feuserlist_pluginkey.view.partialRootPath}
+        partialRootPaths.1 = {$plugin.tx_sc_feuserlist.view.partialRootPath}
         layoutRootPaths.0 = EXT:sc_feuserlist/Resources/Private/Layouts/
-        layoutRootPaths.1 = {$plugin.tx_sc_feuserlist_pluginkey.view.layoutRootPath}
+        layoutRootPaths.1 = {$plugin.tx_sc_feuserlist.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_sc_feuserlist_pluginkey.persistence.storagePid}
+        storagePid = {$plugin.tx_sc_feuserlist.persistence.storagePid}
         #recursive = 1
     }
     features {

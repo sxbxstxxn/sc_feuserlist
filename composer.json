@@ -1,19 +1,29 @@
 {
-  "name": "sc/sc_feuserlist",
-  "description": "SC - Frontend Userlist",
-  "type": "typo3-cms-extension",
-  "require": {
-    "typo3/cms-core": "^9.5.0"
-  },
-  "authors": {
-      "name": "Sebastian Christoph",
-      "email": "admin@sebastian-christoph.de",
-      "homepage": "https://www.sebastian-christoph.de",
-      "role": "Systemadministrator Webanwendungen"
-  },
-  "autoload": {
-    "psr-4": {
-      "SC\\ScFrontenduserlist\\": "Classes/"
+    "name": "scvendor/scextensionkey",
+    "type": "typo3-cms-extension",
+    "description": "scdesciription",
+    "authors": [
+        {
+            "name": "Sebastian Christoph",
+            "role": "Developer"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Scvendor\\Scextensionkey\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Scvendor\\Scextensionkey\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "scextensionkey": "self.version",
+        "typo3-ter/scextensionkey": "self.version"
     }
-  }
 }

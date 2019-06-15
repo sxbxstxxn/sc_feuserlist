@@ -1,15 +1,15 @@
 
-plugin.tx_scextensionkey_pluginkey {
+plugin.tx_sc_feuserlist_pluginkey {
     view {
         # cat=plugin.tx_scextensionkey_pluginkey/file; type=string; label=Path to template root (FE)
-        templateRootPath = EXT:scextensionkey/Resources/Private/Templates/
+        templateRootPath = EXT:sc_feuserlist/Resources/Private/Templates/
         # cat=plugin.tx_scextensionkey_pluginkey/file; type=string; label=Path to template partials (FE)
-        partialRootPath = EXT:scextensionkey/Resources/Private/Partials/
+        partialRootPath = EXT:sc_feuserlist/Resources/Private/Partials/
         # cat=plugin.tx_scextensionkey_pluginkey/file; type=string; label=Path to template layouts (FE)
-        layoutRootPath = EXT:scextensionkey/Resources/Private/Layouts/
+        layoutRootPath = EXT:sc_feuserlist/Resources/Private/Layouts/
     }
     persistence {
-        # cat=plugin.tx_scextensionkey_pluginkey//a; type=string; label=Default storage PID
+        # cat=plugin.tx_sc_feuserlist_pluginkey//a; type=string; label=Default storage PID
         storagePid =
     }
 }

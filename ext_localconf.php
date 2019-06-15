@@ -6,8 +6,8 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'Scvendor.Scextensionkey',
-            'Pluginkey',
+            'SebastianChristoph.sc_feuserlist',
+            'feuserlist',
             [
                 
             ],
@@ -22,13 +22,13 @@ call_user_func(
         'mod {
             wizards.newContentElement.wizardItems.plugins {
                 elements {
-                    pluginkey {
-                        iconIdentifier = scextensionkey-plugin-pluginkey
-                        title = LLL:EXT:scextensionkey/Resources/Private/Language/locallang_db.xlf:tx_scextensionkey_pluginkey.name
-                        description = LLL:EXT:scextensionkey/Resources/Private/Language/locallang_db.xlf:tx_scextensionkey_pluginkey.description
+                    feuserlist {
+                        iconIdentifier = sc_feuserlist-plugin-feuserlist
+                        title = LLL:EXT:sc_feuserlist/Resources/Private/Language/locallang_db.xlf:tx_sc_feuserlist_feuserlist.name
+                        description = LLL:EXT:sc_feuserlist/Resources/Private/Language/locallang_db.xlf:tx_sc_feuserlist_feuserlist.description
                         tt_content_defValues {
                             CType = list
-                            list_type = scextensionkey_pluginkey
+                            list_type = sc_feuserlist_feuserlist
                         }
                     }
                 }
@@ -39,9 +39,9 @@ call_user_func(
 		$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 		
 			$iconRegistry->registerIcon(
-				'scextensionkey-plugin-pluginkey',
+				'sc_feuserlist-plugin-feuserlist',
 				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-				['source' => 'EXT:scextensionkey/Resources/Public/Icons/user_plugin_pluginkey.svg']
+				['source' => 'EXT:sc_feuserlist/Resources/Public/Icons/user_plugin_feuserlist.svg']
 			);
 		
     }

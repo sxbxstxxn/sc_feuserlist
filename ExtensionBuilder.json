@@ -2,7 +2,7 @@
     "modules": [],
     "properties": {
         "backendModules": [],
-        "description": "scdesciription",
+        "description": "Creates a userlist of frontendusers in the frontend with online status",
         "emConf": {
             "category": "plugin",
             "custom_category": "",
@@ -15,10 +15,10 @@
             "targetVersion": "9.5.0-9.5.99",
             "version": "1.0.0"
         },
-        "extensionKey": "scextensionkey",
+        "extensionKey": "sc_feuserlist",
         "name": "sctitle",
-        "originalExtensionKey": "scextensionkey",
-        "originalVendorName": "Scvendor",
+        "originalExtensionKey": "sc_feuserlist",
+        "originalVendorName": "SebastianChristoph",
         "persons": [
             {
                 "company": "",
@@ -34,12 +34,12 @@
                     "noncacheableActions": "",
                     "switchableActions": ""
                 },
-                "description": "plugindescription",
-                "key": "pluginkey",
-                "name": "Pluginname"
+                "description": "Shows a frontenduserlist",
+                "key": "feuserlist",
+                "name": "Frontend Userliste"
             }
         ],
-        "vendorName": "Scvendor"
+        "vendorName": "SebastianChristoph"
     },
     "wires": [],
     "log": {

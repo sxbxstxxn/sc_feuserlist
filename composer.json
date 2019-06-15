@@ -1,5 +1,5 @@
 {
-    "name": "scvendor/scextensionkey",
+    "name": "SebastianChristoph/sc_feuserlist",
     "type": "typo3-cms-extension",
     "description": "scdesciription",
     "authors": [
@@ -23,7 +23,7 @@
         }
     },
     "replace": {
-        "scextensionkey": "self.version",
-        "typo3-ter/scextensionkey": "self.version"
+        "sc_feuserlist": "self.version",
+        "typo3-ter/sc_feuserlist": "self.version"
     }
 }

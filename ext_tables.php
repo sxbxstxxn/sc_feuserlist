@@ -6,12 +6,12 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'Scvendor.Scextensionkey',
-            'Pluginkey',
-            'Pluginname'
+            'SebastianChristoph.sc_feuserlist',
+            'feuserlist',
+            'Frontend Userliste'
         );
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('scextensionkey', 'Configuration/TypoScript', 'sctitle');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('sc_feuserlist', 'Configuration/TypoScript', 'SC FrontendUserlist');
 
     }
 );

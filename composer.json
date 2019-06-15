@@ -1,7 +1,7 @@
 {
     "name": "SebastianChristoph/sc_feuserlist",
     "type": "typo3-cms-extension",
-    "description": "scdesciription",
+    "description": "Creates a userlist of frontendusers in the frontend with online status",
     "authors": [
         {
             "name": "Sebastian Christoph",
@@ -14,12 +14,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Scvendor\\Scextensionkey\\": "Classes"
+            "SebastianChristoph\\ScFeuserlist\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Scvendor\\Scextensionkey\\Tests\\": "Tests"
+            "SebastianChristoph\\ScFeuserlist\\Tests\\": "Tests"
         }
     },
     "replace": {

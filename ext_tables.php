@@ -11,7 +11,7 @@ call_user_func(
             'Frontend Userliste'
         );
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('sc_feuserlist', 'Configuration/TypoScript', 'SC FrontendUserlist');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('sc_feuserlist', 'Configuration/TypoScript', 'SCFrontendUserlist');
 
     }
 );

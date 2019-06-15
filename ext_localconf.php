@@ -9,7 +9,7 @@ call_user_func(
             'SebastianChristoph.sc_feuserlist',
             'feuserlist',
             [
-                
+                'Userlist' => 'list'
             ],
             // non-cacheable actions
             [
@@ -28,7 +28,7 @@ call_user_func(
                         description = LLL:EXT:sc_feuserlist/Resources/Private/Language/locallang_db.xlf:tx_sc_feuserlist_feuserlist.description
                         tt_content_defValues {
                             CType = list
-                            list_type = sc_feuserlist_feuserlist
+                            list_type = scfeuserlist_feuserlist
                         }
                     }
                 }

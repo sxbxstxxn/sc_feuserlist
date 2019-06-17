@@ -4,7 +4,13 @@
     <h1>Userlist</h1>
     <p>
         <f:for each="{users}" as="user" iteration="i">
-                {user.username} ({user.uid}) - <f:format.date format="d.m.Y - H:i:s">{user.lastlogin}</f:format.date><br/>
+            {user.username} ({user.uid}) - <f:format.date format="d.m.Y - H:i:s">{user.lastlogin}</f:format.date><br/>
+        </f:for>
+    </p>
+    <h1>Usergroups</h1>
+    <p>
+        <f:for each="{usergroups}" as="usergroup" iteration="i">
+            {usergroup.title} ({usergroup.uid})<br/>
         </f:for>
     </p>
 </f:section>

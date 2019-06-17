@@ -1,6 +1,7 @@
 <?php
 namespace SebastianChristoph\ScFeuserlist\Controller;
 
+
 /**
  * Class UserlistController
  *
@@ -10,21 +11,20 @@ class UserlistController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 {
 
     /**
-     * feRepository
+     * FeRepository
      *
      * @var \TYPO3\CMS\Extbase\Domain\Repository\FrontendUserRepository
-     * @inject
+     * @TYPO3\CMS\Extbase\Annotation\Inject
      */
     protected $feRepository;
 
     /**
-     * @param FeRepository $feRepository
+     * FeGroupRepository
+     *
+     * @var \TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository
+     * @TYPO3\CMS\Extbase\Annotation\Inject
      */
-    public function injectFeRepository(FeRepository $feRepository)
-    {
-        $this->feRepository = $feRepository;
-    }
-
+    protected $feGroupRepository;
 
     /**
      * list action
@@ -34,6 +34,10 @@ class UserlistController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     public function listAction()
     {
         $allUsers = $this->feRepository->findAll();
-        $this->view->assign('users', $allUsers);
+        $allUserGroups = $this->feGroupRepository->findAll();
+        $this->view->assignMultiple([
+            'users' => $allUsers,
+            'usergroups' => $allUserGroups
+        ]);
     }
 }

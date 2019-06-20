@@ -33,11 +33,10 @@ class UserlistController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function listAction()
     {
-        $allUsers = $this->feRepository->findAll();
-        $allUserGroups = $this->feGroupRepository->findAll();
-        $this->view->assignMultiple([
-            'users' => $allUsers,
-            'usergroups' => $allUserGroups
-        ]);
+        $query = $this->feRepository->createQuery();
+        $query->statement('SELECT * FROM fe_users');
+        $allUsers = $query->execute(TRUE);
+
+        $this->view->assign('users', $allUsers);
     }
 }

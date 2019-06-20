@@ -33,10 +33,35 @@ class UserlistController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function listAction()
     {
+        $pluginUsergroups = $this->settings['usergroups'];
+        $pluginUserPIDs = $this->settings['userPIDs'];
+        $pluginUserStatus = $this->settings['userStatus'];
+
+        if ($pluginUsergroups == '') {
+            $queryStatement = 'SELECT * FROM fe_users WHERE pid IN ('.$pluginUserPIDs.')';
+        }
+        else {
+            $queryStatement = 'SELECT * FROM fe_users WHERE pid IN ('.$pluginUserPIDs.') AND usergroup IN ('.$pluginUsergroups.')';
+        }
+
+
         $query = $this->feRepository->createQuery();
-        $query->statement('SELECT * FROM fe_users');
+        $query->statement($queryStatement);
         $allUsers = $query->execute(TRUE);
 
-        $this->view->assign('users', $allUsers);
+        foreach ($allUsers as $user) {
+            if ($user['is_online'] > 0) {
+                $user['onlinestatus'] = 'online';
+            }
+            else {
+                $user['onlinestatus'] = 'offline';
+            }
+            $allUsersNew[]=$user;
+        }
+
+        $this->view->assignMultiple([
+            'users' => $allUsersNew,
+            'showUserStatus' => $pluginUserStatus
+        ]);
     }
 }

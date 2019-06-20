@@ -1,11 +1,14 @@
 <f:layout name="Default" />
 
 <f:section name="main">
-    <h1>Userlist</h1>
-    <p>
+    <ul>
         <f:for each="{users}" as="user" iteration="i">
-            {user.username} ({user.uid}) - <f:format.date format="d.m.Y - H:i:s">{user.lastlogin}</f:format.date> - <f:format.date format="d.m.Y - H:i:s">{user.is_online}</f:format.date>
-            <br/>
+            <f:if condition="{showUserStatus}">
+                <f:then>
+                    <span>{user.onlinestatus}</span>
+                </f:then>
+            </f:if>
+            <li>{user.username}</li>
         </f:for>
-    </p>
+    </ul>
 </f:section>

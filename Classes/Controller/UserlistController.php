@@ -44,13 +44,14 @@ class UserlistController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
             $queryStatement = 'SELECT * FROM fe_users WHERE pid IN ('.$pluginUserPIDs.') AND usergroup IN ('.$pluginUsergroups.')';
         }
 
-
         $query = $this->feRepository->createQuery();
         $query->statement($queryStatement);
         $allUsers = $query->execute(TRUE);
 
+        $time = time();
+
         foreach ($allUsers as $user) {
-            if ($user['is_online'] > 0) {
+            if ((($time - $user['is_online']) < 600) && ($user['is_online'] > 0)) {
                 $user['onlinestatus'] = 'online';
             }
             else {

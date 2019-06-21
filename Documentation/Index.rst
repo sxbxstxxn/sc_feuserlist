@@ -19,6 +19,12 @@ Extension Name
 :Language:
    en
 
+:Description:
+    Frontend User List in frontend plugin with selectable PID and frontenduser groups
+
+:Keywords:
+    frontenduser, userlist, list
+
 :Authors:
    Sebastian Christoph
 
@@ -26,17 +32,15 @@ Extension Name
    admin@sebastian-christoph.de
 
 :License:
-   This extension documentation is published under the
-   `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
-   license
+    This document is published under the Open Content License
+    available from http://www.opencontent.org/opl.shtml
 
 {extension.description}
 
 **TYPO3**
 
    The content of this document is related to TYPO3 CMS,
-   a GNU/GPL CMS/Framework available from `typo3.org
-   <https://typo3.org/>`_ .
+   a GNU/GPL CMS/Framework available from `typo3.org <https://typo3.org/>`_ .
 
 **Community Documentation:**
 
@@ -45,7 +49,7 @@ Extension Name
    It is maintained as part of this third party extension.
 
    If you find an error or something is missing, please:
-   `Report a Problem <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/issues/new>`__
+   `Report a Problem <https://github.com/sxbxstxxn/sc_feuserlist/issues/new>`__
 
 **Extension Manual**
 

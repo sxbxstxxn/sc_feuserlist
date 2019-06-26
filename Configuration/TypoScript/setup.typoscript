@@ -26,34 +26,11 @@ plugin.tx_sc_feuserlist {
 
 # these classes are only used in auto-generated templates
 plugin.tx_sc_feuserlist._CSS_DEFAULT_STYLE (
-    textarea.f3-form-error {
-        background-color:#FF9F9F;
-        border: 1px #FF0000 solid;
+
+    .userlistuser {
+        background-color:#ffffff;
     }
 
-    input.f3-form-error {
-        background-color:#FF9F9F;
-        border: 1px #FF0000 solid;
-    }
 
-    .tx-scextensionkey table {
-        border-collapse:separate;
-        border-spacing:10px;
-    }
 
-    .tx-scextensionkey table th {
-        font-weight:bold;
-    }
-
-    .tx-scextensionkey table td {
-        vertical-align:top;
-    }
-
-    .typo3-messages .message-error {
-        color:red;
-    }
-
-    .typo3-messages .message-ok {
-        color:green;
-    }
 )
